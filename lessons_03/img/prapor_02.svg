@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg version="1.1" width="2400" height="1600" 
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<rect fill="#00aff0" x="0" y="0" width="2400" height="533.3333"/>
+<rect fill="#ff1e19" x="0" y="533.3333" width="2400" height="533.3334"/>
+<rect fill="#e6dc00" x="0" y="1066.6667" width="2400" height="533.3333"/>
+
+<g transform="translate(866,416)">
+
+<!--shield-->
+<clipPath id="shield_clip_path">
+	<path id="shield" fill="#e6dc00" d="m 2,2 v 432 a 332,332,0,0,0,664,0 v -432 h -664 z"/>
+</clipPath>
+<use xlink:href="#shield"/>
+
+
+<!--castle shape-->
+<clipPath id="castle_clip_path">
+  <path d="M 110,94 h 56 v -22 h 56 v 22 h 56 v -22 h 112 v 22 h 56 v -22 h 56 v 22 h 56 
+	l -200,200 h -48 l -200,-200"/>
+</clipPath>
+
+
+<!--castle bricks-->
+<g clip-path="url(#castle_clip_path)">
+  <g id="brick_line4">
+    <g id="brick_line">
+      <g id="brick4">
+	<rect id="brick" x="111" y="73" width="26" height="20" 
+		style="fill:#222;stroke:#373737;stroke-width:2px"/>
+	<use xlink:href="#brick" transform="translate(28,0)"/>
+	<use xlink:href="#brick" transform="translate(56,0)"/>
+	<use xlink:href="#brick" transform="translate(84,0)"/>
+      </g>
+      <use xlink:href="#brick4" transform="translate(112,0)"/>
+      <use xlink:href="#brick4" transform="translate(224,0)"/>
+      <use xlink:href="#brick4" transform="translate(336,0)"/>
+    </g>
+    <use xlink:href="#brick_line" transform="translate(14,22)"/>
+    <use xlink:href="#brick_line" transform="translate(0,44)"/>
+    <use xlink:href="#brick_line" transform="translate(14,66)"/>
+  </g>
+  <use xlink:href="#brick_line4" transform="translate(0,88)"/>
+</g>
+
+<g id="arc">
+	<ellipse fill="#e6dc00" cx="334" cy="216" rx="58" ry="78"/>
+	<rect fill="#e6dc00" x="276" y="216" width="116" height="78"/>
+</g>
+<use xlink:href="#arc" transform="translate(144,0)"/>
+<use xlink:href="#arc" transform="translate(-144,0)"/>
+
+
+<!--blue line-->
+<path clip-path="url(#shield_clip_path)" style="fill:none;stroke:#00aff0;stroke-width:90px" 
+	d="M 0,0 l 334,360 l 334,-360 M 334,360 v 408"/>
+
+
+<!--cross-->
+<path style="fill:#ff1e19;stroke:#be2323;stroke-width:3px" d="m 70,378 
+	h 168 l -39,54 c -3.9,5.4 3.6,12.9 9,9 l 54,-39 
+	v 168 l -54,-39 c -5.4,-3.9 -12.9,3.6 -9,9 l 39,54 
+	h -168 l 39,-54 c 3.9,-5.4 -3.6,-12.9 -9,-9 l -54,39 
+	v -168 l 54,39 c 5.4,3.9 12.9,-3.6 9,-9 l -39,-54 z"/>
+
+
+<!--pot-->
+<clipPath id="pot_clip_path">
+  <path id="pot" fill="#ff1e19" d="m 412,378 h 216 v 17 c 0,9 -20,15 -20,24 v 9 h 20 v 35 l -100,130 
+	c -4,4 -12,4 -16,0 	l -100,-130 v -35 h 20 v -9 c 0,-9 -20,-15 -20,-24 v -17 z"/>
+</clipPath>
+<use xlink:href="#pot"/>
+<path clip-path="url(#pot_clip_path)" id="pot_decor" 
+	style="fill:none;stroke:#877314;stroke-width:6px;stroke-linecap:round" d="
+	M 432,426 h 176 	M 519,426 v 170 
+	M 520,530 l -33,33 	M 520,550 l -24,24 	M 520,570 l -14,14 
+	M 520,520 l -30,-35 	M 520,490 l -30,-35 
+
+	M 478,426 v 19 a 72,111.27,0,0,1,-72,111.27 
+	M 454,426 v 19 a 48,74.18,0,0,1,-48,74.18 
+	M 436,426 v 19 a 30,46.36,0,0,1,-30,46.36"/>
+<use xlink:href="#pot_decor" transform="scale(-1,1) translate(-1040,0)"/>
+
+<path style="fill:none;stroke:#be2323;stroke-width:3px" d="
+	m 412,378 h 216 v 17 c 0,9 -20,15 -20,24 v 9 h 20 v 35 l -100,130 
+	c -4,4 -12,4 -16,0 	l -100,-130 v -35 h 20 v -9 c 0,-9 -20,-15 -20,-24 v -17 z"/>
+<ellipse id="e1" style="fill:#e6dc00;stroke:#be2323;stroke-width:10px" cx="406" cy="445" rx="11" ry="17"/>
+<use xlink:href="#e1" transform="translate(228,0)"/>
+
+
+<!--shield stroke-->
+<path style="fill:none;stroke:black;stroke-width:4px" d="m 2,2 v 432 a 332,332,0,0,0,664,0 v -432 h -664 z"/>
+
+</g>
+
+</svg>

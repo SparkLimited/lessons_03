@@ -1,0 +1,28 @@
+/* 1 рівень вкладеності */
+ul > li:first-child {
+    color: red;
+}
+ul > li:not(:first-child) {
+    color: green;
+}
+
+/* 2 рівень вкладеності */
+ul ul > li:first-child {
+    color: blue;
+}
+ul ul > li:not(:first-child) {
+    color: orange;
+}
+
+/* 3 рівень вкладеності */
+ul ul ul > li:first-child {
+    color: #4597f7;
+}
+ul ul ul > li:not(:first-child) {
+    color: #5d5d5d;
+}
+
+/* span всередині 2 рівня вкладеності */
+ul ul > li span {
+    color: #a0f0fc;
+}
