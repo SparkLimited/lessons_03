@@ -1,3 +1,5 @@
+@import url("reset.css");
+
 /* 1 рівень вкладеності */
 ul > li:first-child {
     color: red;
