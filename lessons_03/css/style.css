@@ -1,0 +1,40 @@
+@import url("reset.css");
+
+.list {
+    color: blue;
+}
+
+/* 1 рівень вкладеності */
+.item__red {
+    color: red;
+}
+
+.item__green {
+    color: green;
+}
+
+.link {
+    color: blue;
+}
+
+/* 2 рівень вкладеності */
+.item__blue {
+    color: blue;
+}
+
+.item__orange {
+    color: orange;
+}
+
+/* 3 рівень вкладеності */
+.item__color4597f7 {
+    color: #4597f7;
+}
+.item__color5d5d5d {
+    color: #5d5d5d;
+}
+
+/* span всередині 2 рівня вкладеності */
+.item__turquoise {
+    color: #a0f0fc;
+}
